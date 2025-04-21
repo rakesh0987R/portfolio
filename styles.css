@@ -1,10 +1,10 @@
 :root {
-  --bg-light: #f4f4f8;
-  --bg-dark: #1e1e2f;
-  --fg-light: #1a1a1a;
-  --fg-dark: #e8e8f2;
-  --primary: #4a90e2; /* Sleek blue */
-  --secondary: #3e3e4e;
+  --bg-light: #fff4e6;
+  --bg-dark: #2e1a47;
+  --fg-light: #3b2f2f;
+  --fg-dark: #fcefee;
+  --primary: #ff6b6b;
+  --secondary: #5d3f6a;
   --transition: 0.3s ease;
 }
 
@@ -37,7 +37,7 @@ body[data-theme="dark"] {
 }
 
 .section.alt {
-  background: rgba(74, 144, 226, 0.07); /* Soft blue tint */
+  background: rgba(255, 107, 107, 0.08);
 }
 
 /* ========== NAVBAR ========== */
@@ -76,7 +76,7 @@ body[data-theme="dark"] {
 }
 
 .nav-links a:hover {
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.2);
   border-radius: 4px;
 }
 
@@ -176,7 +176,7 @@ body[data-theme="dark"] {
 .bar {
   width: 100%;
   height: 0.5rem;
-  background: #ddd;
+  background: #e0c6b3;
   border-radius: 4px;
   overflow: hidden;
   margin-top: 0.25rem;
@@ -226,7 +226,7 @@ body[data-theme="dark"] {
 
 .projects-table th,
 .projects-table td {
-  border: 1px solid #ccc;
+  border: 1px solid #d1bfb1;
   padding: 0.75rem;
   text-align: left;
 }
