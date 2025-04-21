@@ -1,10 +1,10 @@
 :root {
-  --bg-light: #f5f7fa;
-  --bg-dark: #1f1f2e;
-  --fg-light: #1d1d1d;
-  --fg-dark: #e8eaf6;
-  --primary: #4e89ff; /* Vibrant blue */
-  --accent: #00d1b2; /* Aqua green for highlights */
+  --bg-light: #f4f4f8;
+  --bg-dark: #1e1e2f;
+  --fg-light: #1a1a1a;
+  --fg-dark: #e8e8f2;
+  --primary: #4a90e2; /* Sleek blue */
+  --secondary: #3e3e4e;
   --transition: 0.3s ease;
 }
 
@@ -37,7 +37,7 @@ body[data-theme="dark"] {
 }
 
 .section.alt {
-  background: rgba(78, 137, 255, 0.05);
+  background: rgba(74, 144, 226, 0.07); /* Soft blue tint */
 }
 
 /* ========== NAVBAR ========== */
@@ -48,32 +48,38 @@ body[data-theme="dark"] {
   z-index: 100;
   transition: background var(--transition);
 }
+
 #navbar .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 #navbar .logo {
   color: #fff;
   font-size: 1.5rem;
   text-decoration: none;
   font-weight: bold;
 }
+
 .nav-links {
   list-style: none;
   display: flex;
   gap: 1rem;
 }
+
 .nav-links a {
   color: #fff;
   text-decoration: none;
   padding: 0.75rem;
   transition: background var(--transition);
 }
+
 .nav-links a:hover {
   background: rgba(255, 255, 255, 0.15);
   border-radius: 4px;
 }
+
 #theme-toggle {
   background: none;
   border: none;
@@ -92,50 +98,57 @@ body[data-theme="dark"] {
   background: url('hero-bg.jpg') center/cover no-repeat;
   position: relative;
 }
+
 .hero-content h1 {
   font-size: 3rem;
   margin-bottom: 0.5rem;
   animation: fadeInDown 1s ease forwards;
   opacity: 0;
 }
+
 .hero-content .contact-line {
   font-size: 1rem;
   animation: fadeInUp 1s ease 0.5s forwards;
   opacity: 0;
 }
+
 @keyframes fadeInDown {
   from { transform: translateY(-20px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
 @keyframes fadeInUp {
   from { transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* ========== SECTION HEADERS ========== */
+/* ========== SECTION TITLES ========== */
 .section h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
   position: relative;
 }
+
 .section h2::after {
   content: '';
   width: 50px;
   height: 4px;
-  background: var(--accent);
+  background: var(--primary);
   display: block;
   margin: 0.5rem auto 2rem;
 }
 
+/* ========== LISTS ========== */
 .research-list,
 .awards-list {
   list-style: none;
   padding-left: 1rem;
 }
+
 .research-list li::before,
 .awards-list li::before {
   content: '•';
-  color: var(--accent);
+  color: var(--primary);
   margin-right: 0.5rem;
 }
 
@@ -145,34 +158,41 @@ body[data-theme="dark"] {
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: 2rem;
 }
+
 .skill-bar {
   display: flex;
   align-items: center;
 }
+
 .skill-bar i {
   font-size: 2rem;
   width: 3rem;
 }
+
 .bar-wrap {
   flex: 1;
 }
+
 .bar {
   width: 100%;
   height: 0.5rem;
-  background: #dfe3ea;
+  background: #ddd;
   border-radius: 4px;
   overflow: hidden;
   margin-top: 0.25rem;
 }
+
 .bar .fill {
   height: 100%;
   width: 0;
-  background: var(--accent);
+  background: var(--primary);
   animation: fillBar 1.5s ease forwards;
 }
+
 .skill-bar[data-level] .fill {
   animation-delay: 0.5s;
 }
+
 @keyframes fillBar {
   to { width: var(--level); }
 }
@@ -181,15 +201,18 @@ body[data-theme="dark"] {
 .exp-item {
   margin-bottom: 2rem;
 }
+
 .exp-item h3 {
   font-size: 1.2rem;
 }
+
 .exp-item .date {
   display: block;
   font-size: 0.9rem;
-  color: #888;
+  color: gray;
   margin-bottom: 0.5rem;
 }
+
 .exp-item ul {
   list-style: disc inside;
 }
@@ -200,12 +223,14 @@ body[data-theme="dark"] {
   border-collapse: collapse;
   margin-top: 1rem;
 }
+
 .projects-table th,
 .projects-table td {
   border: 1px solid #ccc;
   padding: 0.75rem;
   text-align: left;
 }
+
 .projects-table th {
   background: var(--primary);
   color: #fff;
@@ -216,7 +241,7 @@ blockquote {
   margin: 2rem 0;
   font-style: italic;
   text-align: center;
-  color: var(--accent);
+  color: var(--primary);
 }
 
 /* ========== RESPONSIVE ========== */
