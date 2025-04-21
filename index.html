@@ -1,15 +1,18 @@
-Certainly! I've updated your HTML resume to incorporate a light blue background (`#ADD8E6`) and revised the content to reflect the details you've provided. Here's the complete HTML code:
-
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>Tenali Rakesh | Resume</title>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, viewport-fit=cover"
+  />
+  <title>  Rakesh Tenali | Resume</title>
 
   <!-- AOS (Animate On Scroll) -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link
+    href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+    rel="stylesheet"
+  />
   <!-- Font Awesome Icons -->
   <link
     rel="stylesheet"
@@ -18,137 +21,245 @@ Certainly! I've updated your HTML resume to incorporate a light blue background 
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   />
-  <style>
-    body {
-      background-color: #ADD8E6;
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    .container {
-      width: 90%;
-      max-width: 1000px;
-      margin: auto;
-      padding: 20px;
-      background-color: white;
-    }
-    h1, h2, h3 {
-      color: #333;
-    }
-    .contact-line {
-      margin-bottom: 20px;
-    }
-    .section {
-      margin-bottom: 40px;
-    }
-    .skills-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-    .skill-bar {
-      flex: 1 1 45%;
-      background-color: #f0f0f0;
-      padding: 10px;
-      border-radius: 5px;
-    }
-    .projects-table {
-      width: 100%;
-      border-collapse: collapse;
-    }
-    .projects-table th, .projects-table td {
-      border: 1px solid #ccc;
-      padding: 8px;
-    }
-    .projects-table th {
-      background-color: #f0f0f0;
-    }
-    .awards-list {
-      list-style-type: disc;
-      padding-left: 20px;
-    }
-    blockquote {
-      margin: 20px 0;
-      font-style: italic;
-      color: #555;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body data-theme="light">
-  <div class="container">
-    <!-- HERO -->
-    <header id="hero">
-      <h1>Tenali Rakesh</h1>
-      <p class="contact-line">
-        <i class="fas fa-map-marker-alt"></i> Saint Louis, Missouri |
-        <i class="fas fa-envelope"></i> <a href="mailto:tenali.rakesh@gmail.com">tenali.rakesh@gmail.com</a> |
-        <i class="fas fa-phone"></i> +1 314-665-7852 |
-        <a href="https://www.linkedin.com/in/rakesh-tenali-4b1411234/" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/rakesh0987R" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://www.datascienceportfol.io/tenalirakesh" target="_blank"><i class="fas fa-globe"></i></a>
-      </p>
-    </header>
+  <!-- NAVIGATION -->
+  <nav id="navbar">
+    <div class="container">
+      <a href="#hero" class="logo">CPB</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#awards">Awards</a></li>
+      </ul>
+      <button id="theme-toggle" aria-label="Toggle theme">
+        <i class="fas fa-moon"></i>
+      </button>
+    </div>
+  </nav>
 
-    <!-- ABOUT -->
-    <section id="about" class="section">
+  <!-- HERO -->
+  <header id="hero">
+    <div class="container hero-content" data-aos="fade-down">
+      <h1> Rakesh Tenali </h1>
+      <p class="contact-line">
+        <i class="fas fa-map-marker-alt"></i> Saint Louis, MO | 
+        <i class="fas fa-envelope"></i>
+        <a href="mailto:rakesh.tenali@slu.edu"
+          >rakesh.tenali@slu.edu</a
+        > | 
+        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-medium"></i></a>
+        <a href="#" target="_blank"><i class="fas fa-globe"></i></a>
+      </p>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about" class="section" data-aos="fade-up">
+    <div class="container">
       <h2>About Me</h2>
       <p>
-        Highly skilled in data mining and analysis of large datasets with keen attention to short and long-term trends. Proficient in handling complex quantitative data, both independently and collaboratively. Thrives under pressure, excels in communication, and possesses strong expertise in SQL, Python, DBMS, Excel, Power BI, HTML, CSS.
-      </p>
-    </section>
+        I’m currently pursuing a Master’s in Information Systems at Saint Louis University, with one semester left. I’ve developed strong skills in Python, SQL, DBMS, Power BI, Excel, HTML, and CSS. With a solid background in Electrical and Electronics Engineering, I’m passionate about solving real-world problems through data and technology.
 
-    <!-- EDUCATION -->
-    <section id="education" class="section">
+
+      </p>
+    </div>
+  </section>
+
+  <!-- RESEARCH -->
+  <section id="research" class="section alt" data-aos="fade-up">
+    <div class="container">
+      <h2>Research Interests</h2>
+      <ul class="research-list">
+        <li>Interpretable Machine Learning: Transparent models for healthcare</li>
+        <li>Cybersecurity with ML: Advanced fraud detection algorithms</li>
+        <li>Natural Language Processing: Efficient text analysis systems</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section" data-aos="fade-up">
+    <div class="container">
       <h2>Education</h2>
       <div class="edu-item">
-        <h3>Master of Computer & Information Sciences</h3>
+        <h3>Master of Computer &amp; Information Sciences</h3>
         <p>
-          Saint Louis University, MO • Jan 2024 – Dec 2025<br />
-          GPA: 3.81 / 4.00
+          Saint Louis University, MO &bull; Aug 2022 – May 2024<br />
+          GPA: 3.93 / 4.00
         </p>
       </div>
-      <div class="edu-item">
-        <h3>Bachelor of Technology in Electrical and Electronics Engineering</h3>
-        <p>
-          Institute of Aeronautical Engineering, Hyderabad, Telangana • Jun 2020 – Jul 2023<br />
-          GPA: 3.7 / 4.00
-        </p>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section alt" data-aos="fade-up">
+    <div class="container">
+      <h2>Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-bar" data-aos="fade-right" data-level="90%">
+          <i class="fab fa-python"></i>
+          <div class="bar-wrap">
+            <span>Python</span>
+            <div class="bar"><div class="fill"></div></div>
+          </div>
+        </div>
+        <div class="skill-bar" data-aos="fade-right" data-aos-delay="100" data-level="85%">
+          <i class="fab fa-js"></i>
+          <div class="bar-wrap">
+            <span>JavaScript</span>
+            <div class="bar"><div class="fill"></div></div>
+          </div>
+        </div>
+        <div class="skill-bar" data-aos="fade-right" data-aos-delay="200" data-level="80%">
+          <i class="fab fa-react"></i>
+          <div class="bar-wrap">
+            <span>React.js</span>
+            <div class="bar"><div class="fill"></div></div>
+          </div>
+        </div>
+        <div class="skill-bar" data-aos="fade-right" data-aos-delay="300" data-level="75%">
+          <i class="fas fa-database"></i>
+          <div class="bar-wrap">
+            <span>SQL/NoSQL</span>
+            <div class="bar"><div class="fill"></div></div>
+          </div>
+        </div>
+        <!-- Add more skills similarly -->
       </div>
-      <p><strong>Relevant Coursework:</strong> Business Application Development, IT Project Management, Business Intelligence, Data Analytics, Cyber Security</p>
-    </section>
+    </div>
+  </section>
 
-    <!-- SKILLS -->
-    <section id="skills" class="section">
-      <h2>Skills</h2>
-      <p><strong>Functional:</strong> Communication Skills, Leadership Skills, Emotional Intelligence (EQ), Problem Solving</p>
-      <p><strong>Technical:</strong> Python, SQL, Excel, Power BI, HTML, CSS, Bootstrap, MySQL, SQLite</p>
-    </section>
-
-    <!-- EXPERIENCE -->
-    <section id="experience" class="section">
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section" data-aos="fade-up">
+    <div class="container">
       <h2>Professional Experience</h2>
       <div class="exp-item">
-        <h3>Machine Learning Intern</h3>
-        <p>One Stop, Hyderabad, India • Jan 2021 – Aug 2021</p>
+        <h3>Machine Learning Engineer · EliteNotes</h3>
+        <span class="date">Jun 2023 – Present</span>
         <ul>
-          <li>Gained practical experience in machine learning concepts using Python.</li>
-          <li>Worked on computer vision projects utilizing OpenCV and TensorFlow for image and video analysis.</li>
-          <li>Handled big data efficiently using tools like Apache Spark and Dask.</li>
-          <li>Explored various applications and opportunities in the evolving field of machine learning.</li>
+          <li>
+            Built a Python‑based transcription system with 95% accuracy,
+            integrating multilingual translation (98% accuracy) for 10,000+ files/day
+            using React.js and Node.js.
+          </li>
+          <li>
+            Optimized data preprocessing, reducing processing time by 50% and boosting
+            real‑time transcription efficiency.
+          </li>
         </ul>
       </div>
       <div class="exp-item">
-        <h3>Hybrid Electric Vehicle Intern</h3>
-        <p>1 Stop, Kharagpur, West Bengal, India • Jun 2021 – Sep 2021</p>
+        <h3>UX Research &amp; ITS Workflow Analyst · SLU</h3>
+        <span class="date">Mar 2023 – Dec 2023</span>
         <ul>
-          <li>Learned fundamentals of hybrid vehicle construction and operation through MATLAB simulations.</li>
-          <li>Utilized CATIA V5-3DX software to arrange major vehicle parts in 3D simulations.</li>
-          <li>Worked independently and collaborated with experienced staff on various projects.</li>
-          <li>Developed skills in electrical software, CATIA, hybrid vehicles, and machine modeling.</li>
+          <li>
+            Developed web interfaces for lost‑and‑found and 3D‑printing ticketing,
+            improving efficiency by 40%.
+          </li>
+          <li>
+            Automated workflows with TeamDynamix iPaaS, cutting workload by 15% and
+            response times by 30%.
+          </li>
         </ul>
       </div>
-    </section>
+      <div class="exp-item">
+        <h3>Associate Software Engineer · Qentelli Solutions Pvt Ltd</h3>
+        <span class="date">Mar 2021 – Jul 2022</span>
+        <ul>
+          <li>
+            Enhanced recommendation algorithms, increasing user engagement through
+            feedback‑driven models.
+          </li>
+          <li>
+            Implemented UI components with React.js/Vue.js, achieving 90% accuracy in
+            customer sentiment prediction.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-    <!-- PROJECTS -->
-    
+  <!-- PROJECTS -->
+  <section id="projects" class="section alt" data-aos="fade-up">
+    <div class="container">
+      <h2>AI &amp; ML Projects</h2>
+      <table class="projects-table">
+        <thead>
+          <tr>
+            <th>Project</th>
+            <th>Description</th>
+            <th>Technologies</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>VizFlixGPT</td>
+            <td>
+              AI‑driven movie recommendation platform serving 1,000+ users,
+              increasing session duration by 25%.
+            </td>
+            <td>JavaScript, React.js, Redux, Firebase, OpenAI GPT</td>
+          </tr>
+          <tr>
+            <td>EliteNotes App</td>
+            <td>
+              ML‑powered transcription and summarization system processing
+              10,000+ files/day with 50% efficiency gain.
+            </td>
+            <td>JavaScript, LLM, TF‑IDF, Word2Vec, React.js</td>
+          </tr>
+          <tr>
+            <td>Apparel Recommendation</td>
+            <td>
+              Processed 180K+ images, boosting recommendation accuracy by 20%
+              using NLP and computer vision.
+            </td>
+            <td>Python, BoW, TF‑IDF, Word2Vec, VCG‑CNN</td>
+          </tr>
+          <tr>
+            <td>NY Taxi Demand Prediction</td>
+            <td>
+              Achieved &lt;12% MAPE in taxi demand forecasting with time‑series
+              analysis and ensembles.
+            </td>
+            <td>Python, Linear Regression, Random Forest, XGBoost</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- AWARDS -->
+  <section id="awards" class="section" data-aos="fade-up">
+    <div class="container">
+      <h2>Awards &amp; Achievements</h2>
+      <ul class="awards-list">
+        <li>
+          🎓 Distinguished Student Award for Master’s Research (GPA 3.93/4.00)
+        </li>
+        <li>🖋 Authored 100+ technical articles on Medium and LinkedIn</li>
+        <li>
+          📜 Published: “Building Data‑Driven Learning Tools for Software
+          Education,” CCSC Central Plains (2024)
+        </li>
+      </ul>
+      <blockquote>
+        ⭐️ “Every day brings new data, new insights, and new possibilities.” ⭐️
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- SCRIPTS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
